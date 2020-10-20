@@ -10,20 +10,20 @@ namespace Task_1
             Client c1 = new Client(001, "AZE56781234", 22.30);
             Client c2 = new Client(025, "RU87654321", 50.00);
             Client c3 = new Client(034, "ENG56781234", 12.35);
-            string direct = @"C:\Elxan_monstr7";
+            string direct = @"C:\Elxan_monstr9";
             DirectoryInfo dir = new DirectoryInfo(direct);
             if (!dir.Exists)
             {
                 dir.Create();
             }
-            string filename1 = $@"{direct}\Elxan_zver.txt";
+            string filename1 = $@"{direct}\Elxan_Main.txt";
             FileInfo fileinf = new FileInfo(filename1);
             if (!fileinf.Exists)
             {
                 fileinf.CreateText().Close();
             }
             
-            string filename2 = $@"{direct}\Elxan_akula.txt";
+            string filename2 = $@"{direct}\Elxan_Changed.txt";
             FileInfo fileing = new FileInfo(filename2);
             if (!fileinf.Exists)
             {
